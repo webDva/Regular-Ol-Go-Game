@@ -3,5 +3,10 @@
  */
 
 class Board {
-    let dimensions = 9; // default dimensions is 9x9
+    /** For now, instances will do.
+     * @param {Number} dimensions The length of the sides.
+     */
+    constructor(dimensions) {
+        this.dimensions = dimensions; // default dimensions is 9x9
+    }
 }

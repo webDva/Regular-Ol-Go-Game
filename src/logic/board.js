@@ -7,7 +7,18 @@ export const EMPTY_POINT = 0;
 export const PLAYER_ONE_FILLED_POINT = 1;
 export const PLAYER_TWO_FILLED_POINT = 2;
 
+// enums to represent players so I won't have to remember the players
+export const PLAYER_ONE = 0;
+export const PLAYER_TWO = 1;
+
 class Board {    
+    
+    // Represents the state of an individual turn.
+    State = {
+        "isWhoseTurn": PLAYER_ONE, // Player one or white will always be first
+        "isTurnNumber": 0
+    };
+    
     /** For now, instances will do.
      * @param {Number} dimensions The length of the sides.
      */
